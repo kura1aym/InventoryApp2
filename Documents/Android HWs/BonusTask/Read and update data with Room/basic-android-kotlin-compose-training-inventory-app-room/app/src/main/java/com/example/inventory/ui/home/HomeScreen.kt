@@ -53,6 +53,7 @@ import com.example.inventory.data.Item
 import com.example.inventory.ui.item.formatedPrice
 import com.example.inventory.ui.navigation.NavigationDestination
 import com.example.inventory.ui.theme.InventoryTheme
+import kotlinx.coroutines.flow.StateFlow
 
 object HomeDestination : NavigationDestination {
     override val route = "home"
@@ -70,6 +71,7 @@ fun HomeScreen(
     navigateToItemUpdate: (Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
+
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
 
     Scaffold(
